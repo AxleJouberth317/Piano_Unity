@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 593231666}
   - component: {fileID: 593231665}
   m_Layer: 0
-  m_Name: Part Rigth
+  m_Name: Rigth Part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -948,6 +948,7 @@ GameObject:
   - component: {fileID: 1264683041}
   - component: {fileID: 1264683040}
   - component: {fileID: 1264683039}
+  - component: {fileID: 1264683042}
   m_Layer: 0
   m_Name: Do_Key
   m_TagString: Untagged
@@ -1027,6 +1028,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264683037}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1264683042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264683037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a7d0f6aa37f9804f9b907bd71aab53d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  targetPos: {x: 0, y: 0, z: 0}
 --- !u!1 &1449817940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1040,7 +1055,7 @@ GameObject:
   - component: {fileID: 1449817943}
   - component: {fileID: 1449817942}
   m_Layer: 0
-  m_Name: Part Left
+  m_Name: Left Part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1203,7 +1218,7 @@ GameObject:
   - component: {fileID: 1834417639}
   - component: {fileID: 1834417638}
   m_Layer: 0
-  m_Name: Part Bottom
+  m_Name: Bottom Part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1294,7 +1309,7 @@ GameObject:
   - component: {fileID: 1845726743}
   - component: {fileID: 1845726742}
   m_Layer: 0
-  m_Name: Part Back
+  m_Name: 'Back Part '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
