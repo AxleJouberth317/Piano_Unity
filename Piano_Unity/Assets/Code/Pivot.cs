@@ -3,46 +3,54 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-/*public class MousePos: MonoBehaviour {
- 
-     
- }*/
-
-
-
-public class Keys : MonoBehaviour
+public class Pivot : MonoBehaviour
 {
-    public float speed = 20f;
-    public Vector3 targetPos;
-    // Use this for initialization1
+    // Use this for initialization
     void Start () {
  
-        targetPos = transform.position;
+
     }
      
      // Update is called once per frame
     void Update () {
 
-    	{//Key Movement
-
-    		
+    	/*{//Key Movement
 
     		if(Input.GetMouseButtonDown(0)){
-    			transform.rotation *= Quaternion.Euler(-15,0,0);
+    			transform.rotation *= Quaternion.Euler(-10,0,0);
 
-			    //transform.Rotate(new Vector3(30,0,0));
 			}
 			if(Input.GetMouseButtonUp(0)){
-				transform.rotation *= Quaternion.Euler(15,0,0);
+				transform.rotation *= Quaternion.Euler(10,0,0);
 				
 				//transform.rotation = oldRot;
-			    //transform.Rotate(new Vector3(30,0,0));
 			}
-    	}
+    	}*/
 		
     
     }
-    
+    void OnMouseOver()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+         
+            transform.parent.rotation *= Quaternion.Euler(-10, 0, 0);
+
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            transform.parent.rotation *= Quaternion.Euler(10, 0, 0);
+
+            //transform.rotation = oldRot;
+        }
+
+    }
+
+    void OnMouseExit()
+    {
+        //Debug.Log("Mouse is no longer on GameObject.");
+    }
+
 }
 
 //This is funny
