@@ -5,9 +5,11 @@ Testing Unity Engine
 
 
 To Do List
--Piano Structure
--Keys pressed animation
--Interation w/ mouse
--Sound Integration
--Interation w/ keyboard
--Special Button :)
+<ul>
+<li>Piano Structure           check</li>
+<li>Keys pressed animation    check</li>
+<li>Interation w/ mouse       check</li>
+<li>Sound Integration         check</li>
+-Interation w/ keyboard       </li>
+-Special Button :)            </li>
+</ul>
