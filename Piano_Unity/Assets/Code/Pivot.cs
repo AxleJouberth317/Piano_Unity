@@ -14,6 +14,8 @@ public class Pivot : MonoBehaviour
         {
          
             transform.parent.rotation *= Quaternion.Euler(-10, 0, 0);
+
+
             isDown = true;
             
         }
