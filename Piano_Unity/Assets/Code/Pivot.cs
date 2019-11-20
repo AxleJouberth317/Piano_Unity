@@ -3,52 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+
 public class Pivot : MonoBehaviour
 {
-    // Use this for initialization
-    void Start () {
- 
-
-    }
-     
-     // Update is called once per frame
-    void Update () {
-
-    	/*{//Key Movement
-
-    		if(Input.GetMouseButtonDown(0)){
-    			transform.rotation *= Quaternion.Euler(-10,0,0);
-
-			}
-			if(Input.GetMouseButtonUp(0)){
-				transform.rotation *= Quaternion.Euler(10,0,0);
-				
-				//transform.rotation = oldRot;
-			}
-    	}*/
-		
-    
-    }
+    bool isDown = false;
+  
     void OnMouseOver()
     {
         if (Input.GetMouseButtonDown(0))
         {
          
             transform.parent.rotation *= Quaternion.Euler(-10, 0, 0);
-
+            isDown = true;
+            
         }
-        if (Input.GetMouseButtonUp(0))
-        {
+        
+        if(Input.GetMouseButtonUp(0)&&isDown)
+            {
             transform.parent.rotation *= Quaternion.Euler(10, 0, 0);
-
-            //transform.rotation = oldRot;
+            isDown = false;
         }
-
     }
 
     void OnMouseExit()
     {
-        //Debug.Log("Mouse is no longer on GameObject.");
+        if (isDown)
+        {
+            transform.parent.rotation *= Quaternion.Euler(10, 0, 0);
+            isDown = false;
+        }
     }
 
 }
