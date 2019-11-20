@@ -10,6 +10,6 @@ To Do List
 <li>Keys pressed animation    check</li>
 <li>Interation w/ mouse       check</li>
 <li>Sound Integration         check</li>
--Interation w/ keyboard       </li>
--Special Button :)            </li>
+<li>Interation w/ keyboard       </li>
+<li>Special Button :)            </li>
 </ul>
